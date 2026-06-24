@@ -1,0 +1,304 @@
+@charset "utf-8";
+
+body {
+    font-family: "Noto Serif JP", serif;
+
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(73, 5, 5);
+
+
+    background-image: linear-gradient(rgba(210, 123, 123, 0.589)), url(ja07.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.hero::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: #ffffff55;
+
+    z-index: 1;
+
+    pointer-events: none;
+}
+
+
+
+
+
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    position: relative;
+    z-index: 0;
+}
+
+
+.hero strong {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    text-shadow: 1.5px 1.5px 1.5px;
+    color: rgb(73, 5, 5);
+    font-weight: bold;
+    
+    z-index: 2;
+
+
+}
+
+.nav-container {
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    top: 15px;
+    right: 0;
+    left: 15px;
+}
+
+
+.nav-item {
+    color: rgb(73, 5, 5);
+    font-weight: bold;
+    background-color: rgba(226, 105, 105, 0.987);
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 6px;
+
+
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: .6s;
+}
+
+.nav-item:hover {
+    color: rgb(109, 7, 7);
+    border-bottom: 2px solid rgb(109, 7, 7);
+
+}
+
+.explanation {
+    width: calc(60%);
+}
+
+.img-container {
+    display: flex;
+    align-items: center;
+}
+
+.sentence-right {
+    margin: 0 15px;
+}
+
+.sentence-left {
+    margin: 0 15px;
+}
+
+
+
+
+.survey {
+    text-align: center;
+}
+.form {
+    background-color: #f3dfcd9e;
+
+    font-weight: bold;
+    width: 100%;
+    padding: 10px;
+}
+
+.form-inner {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 15px;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-row label:first-child,
+.form-title {
+    width: 250px;
+    display: inline-block;
+}
+
+.input,
+.select,
+.textarea {
+    width: 400px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #f6f3f3;
+
+}
+
+.radio {
+    margin: 0 10px;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+
+}
+
+.textarea {
+    min-height: 100px;
+}
+
+label,
+button {
+    cursor: pointer;
+}
+
+.form-button {
+    text-align: center;
+}
+
+
+.link-container {
+    display: flex;
+    flex-direction: column;
+
+}
+.link-items {
+    color: rgb(73, 5, 5);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: .6s;
+}
+.link-items:hover {
+    color: rgb(37, 2, 2);
+    border-bottom: 2px solid rgb(37, 2, 2);
+}
+
+
+
+
+
+.footer {
+    background-color: #640c0cb4;
+    color: aliceblue;
+}
+.footer-map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 40px 15px;
+}
+
+.footer-map iframe {
+    width: 60%;
+}
+
+.footer-mapinfo {
+    width: 40%;
+
+    padding: 15px;
+    
+}
+.footer-maplogo{
+    font-size: 25px;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+}
+.ryu {
+    width: 60px;
+    height: 60px;
+
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+                    
+
+                   
+.footer-mapaddress {
+    font-style: normal;
+}
+.footer-mapaddress a {
+    color: #f8f3f3b4;
+}
+.footer-line {
+    border-color: #5c5656;
+}
+.footer-copy {
+    display: block;
+    text-align: center;
+    padding: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.top-button {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+
+    
+}
+
+.top-button a {
+    color: rgb(73, 5, 5);
+    background-color: rgba(226, 105, 105, 0.987);
+    border-radius: 6px;
+    padding: 10px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: .6s;
+}
+
+.top-button a:hover {
+   color: rgb(41, 2, 2); 
+   border-bottom: 2px solid rgb(41, 2, 2);
+}
